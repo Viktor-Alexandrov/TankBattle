@@ -3,7 +3,7 @@ import sys
 from pygame.locals import *
 from game_locals import *
 from game_locals import __init__
-from tanks import CreateTanks
+from tanks import  CreatePlayerTank
 
 main_screen = pygame.display.set_mode(screen_size)
 
@@ -11,7 +11,7 @@ clock = pygame.time.Clock()
 
 background_image = load_image('assets/sprites/background_image.png', False)
 
-player_tank = CreateTanks()
+player_tank = CreatePlayerTank()
 player_tank = player_tank.create_tank(True, 'up')
 rect_player_tank = player_tank.get_rect()
 pos_player_tank = (screen_width / 2 - rect_player_tank.width / 2,
