@@ -12,6 +12,9 @@ class CreateTanks:
     def create_tank(self, is_alpha, direction):
         pass
 
+    def pos_tank(self):
+        pass
+
 
 class CreatePlayerTank(CreateTanks):
     # Класс для создания танка игрока.
