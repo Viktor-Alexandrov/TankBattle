@@ -14,6 +14,7 @@ class CreateTanks:
 
 
 class CreatePlayerTank(CreateTanks):
+    # Класс для создания танка игрока.
 
     def __init__(self):
         super().__init__()
